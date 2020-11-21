@@ -28,6 +28,7 @@ dependencies {
     implementation rootProject.ext.appCompat
     implementation rootProject.ext.lifecycleExtensions
     implementation rootProject.ext.kotlinStdlib
+    implementation rootProject.ext.processLifeCycle
 
     testImplementation rootProject.ext.junit
 }
