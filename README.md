@@ -1,8 +1,11 @@
 Scarlet
 ===
 [![CircleCI](https://circleci.com/gh/Tinder/Scarlet.svg?style=svg)](https://circleci.com/gh/Tinder/Scarlet)
+[![](https://jitpack.io/v/akndmr/Scarlet.svg)](https://jitpack.io/#akndmr/Scarlet)
 
-A Retrofit inspired persistent connection client for Kotlin, Java, and Android.
+
+A Retrofit inspired persistent connection client for Kotlin, Java, and Android.	      
+
 
 Tutorial
 ---
@@ -79,18 +82,23 @@ Scarlet is available via Maven Central.
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
 
-##### Maven:
-```xml
-<dependency>
-    <groupId>com.tinder.scarlet</groupId>
-    <artifactId>scarlet</artifactId>
-    <version>0.2.5-SNAPSHOT</version>
-</dependency>
-```
 
 ##### Gradle:
 ```groovy
-implementation 'com.tinder.scarlet:scarlet:0.1.9'
+
+#v0.2.x -> v0.2.5-alpha01
+
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+
+dependencies {
+	implementation 'com.github.akndmr.Scarlet:scarlet:0.2.5-alpha01'
+}
+
 ```
 
 ### Plug-in Roadmap
